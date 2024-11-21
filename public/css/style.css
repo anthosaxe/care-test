@@ -1,0 +1,2142 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Smash - Bootstrap Template
+    Template URI: titleNumbers
+    Author: UIdeck
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS
+	  02. Menu
+    03. Formulaire test
+	  04. Banner
+    05. Saviez-vous
+    06. Risque
+    07. Partenaires
+    08. Footer
+    09. Responsive
+-----------------------------------------------------------------------------------*/
+
+/*===========================
+      01. Theme default CSS
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #121212;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+i, span, a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #2E93F3;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #2E93F3;
+    margin: 0px;
+}
+
+.container-type ul {
+    list-style-type: unset;
+    margin-left: 25px;
+}
+
+.container-type li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #2E93F3;
+    margin: 0px;
+}
+
+.container-type h3 {
+    text-decoration: underline;
+}
+
+.container-type p {
+    font-size: 18px;
+}
+
+.container-type p.en-tete {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFC131;
+    font-weight: 500;
+}
+
+/* .container-type img {
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+} */
+
+.container-type img.consulte-picto {
+    width: 300px;
+    height: auto;
+}
+
+.container-type a {
+    color: #80ba27;
+}
+
+.bg_cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.container-test {
+    width: 100vw;
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-custom {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.buton {
+    border: 2px solid #2E93F3;
+    color: #2E93F3;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px 15px;
+    overflow: hidden;
+    width: 150px;
+    height: 40px;
+}
+
+.buton p {
+    color: #2E93F3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    width: 100%;
+    text-align: center;
+}
+
+.buton:hover p {
+    color: white;
+}
+
+.buton:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.round {
+    background-color: #2E93F3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.buton:hover .round {
+    animation: animButton2 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.question .buton:hover .round {
+    animation: animButton 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.votreRisqueVasculaire img {
+    width: 280px;
+}
+
+/* .axe-left {
+    left: -112%;
+    bottom: 55%;
+}
+
+.axe-right {
+    right: -165%;
+    bottom: 0;
+} */
+
+@keyframes animButton {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@keyframes animButton2 {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.question .buton {
+    width: 500px;
+    height: 60px;
+}
+
+.Green {
+    color: #86A63E;
+}
+
+.Yellow {
+    color: #EAAE25;
+}
+
+.Red {
+    color: #EC6A5B;
+}
+
+.small {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: -18px;
+}
+
+/*******************************************************
+************************ Preloader **********************
+*******************************************************/
+
+.containLoader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.loader {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.loader .loader-inner-1, .loader .loader-inner-2, .loader .loader-inner-3, .loader .loader-inner-4 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.loader .loader-inner-1:before, .loader .loader-inner-2:before, .loader .loader-inner-3:before, .loader .loader-inner-4:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    animation-name: loading-1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+}
+
+.loader .loader-inner-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(70deg);
+}
+
+.loader .loader-inner-1:before {
+    background: #2E93F3;
+}
+
+.loader .loader-inner-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(160deg);
+}
+
+.loader .loader-inner-2:before {
+    background: #86A63E;
+}
+
+.loader .loader-inner-3 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(-110deg);
+}
+
+.loader .loader-inner-3:before {
+    background: #EAAE25;
+}
+
+.loader .loader-inner-4 {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-20deg);
+}
+
+.loader .loader-inner-4:before {
+    background: #EC6A5B;
+}
+
+@keyframes loading-1 {
+    0% {
+        width: 20px;
+        right: 0;
+    }
+    30% {
+        width: 120px;
+        right: -100px;
+    }
+    60% {
+        width: 20px;
+        right: -100px;
+    }
+}
+
+/*******************************************************
+************************ 02. Menu **********************
+*******************************************************/
+
+.menu {
+    height: 140px;
+    width: 100vw;
+    padding: 0 5% 0 5%;
+    top: 0;
+    left: 0;
+}
+
+.menu .logo-ulb {
+  width: 150px;
+  height: auto;
+}
+
+.menu .logo.care-test {
+  width: 200px;
+  height: auto;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-left: 2.5vw;
+}
+
+.menu li a {
+    color: #2E93F3;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #86A63E;
+}
+
+.menu li:last-of-type a.list5 {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2E93F3;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #2E93F3;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li:last-of-type a.list5:hover {
+    background-color: white;
+    color: #2E93F3;
+    border: 2px solid #2E93F3;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul.submenu2, ul.submenu3 {
+    width: 150px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    border: 1px solid #2e93f3;
+    border-top: 0;
+    z-index: 9999;
+}
+
+.submenu2 li, .submenu3 li {
+    margin-left: 0;
+    line-height: 30px;
+}
+
+.submenu2 li a, .submenu3 li a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.menu li:nth-child(2), .menu li:nth-child(3) {
+    text-align: center;
+    position: relative;
+}
+
+/* menu animation */
+
+.menu.menu_scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background: #fff;
+    z-index: 999;
+    height: 100px;
+    animation-name: menu;
+    animation-duration: .5s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+@keyframes menu {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+/*******************************************************
+***************** 03. Formulaire test ******************
+*******************************************************/
+
+.myform.slick-slide, .myform2.slick-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.myform .slick-list, .myform .slick-track, .myform2 .slick-list, .myform2 .slick-track {
+    height: 100%;
+}
+
+.myform, .myform2 {
+    /* margin-top: 140px; */
+    width: 100vw;
+    height: calc(100vh - 140px);
+    color: #2E93F3;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.question {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myform .slick-prev, .myform .slick-next, .myform2 .slick-prev, .myform2 .slick-next {
+    display: none !important;
+}
+
+.slick-prev.slick-arrow {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    border: none;
+    background: rgba(46, 147, 243, 0.95);
+    padding: 10px;
+    color: white;
+    FONT-WEIGHT: 600;
+    cursor: pointer;
+}
+
+.back {
+    width: 25px;
+    top: 13px;
+    left: -50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.toDownload .back {
+    top: 13px;
+    left: 450px;
+}
+
+.next {
+    bottom: 20px;
+    right: 150px;
+    cursor: pointer;
+}
+
+.final {
+    cursor: pointer;
+}
+
+.countPage {
+    right: 50px;
+    bottom: 50px;
+    font-size: 40px;
+    color: #2E93F3;
+}
+
+.countPage span {
+    font-size: 80px;
+}
+
+.myform h1, .myform2 h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #2E93F3;
+    text-align: center;
+    /* line-height: 135px; */
+}
+
+.cardio-popup img {
+    width: 200px;
+    left: 115%;
+}
+
+.cardio-popup p {
+    left: 25%;
+}
+
+.otherLast .small {
+    margin: 0;
+}
+
+.myform h1 span:first-of-type, .myform2 h1 span:first-of-type {
+    color: #EC6A5B;
+}
+
+.myform h1 span:nth-of-type(2), .myform2 h1 span:nth-of-type(2) {
+    color: #FFC131;
+}
+
+.myform h2 span:first-of-type, .myform2 h2 span:first-of-type {
+    color: #86A63E;
+}
+
+.question label span:first-of-type {
+    color: #86A63E;
+}
+
+.question label span:nth-of-type(2) {
+    color: #FFC131;
+}
+
+.question label span:nth-of-type(3) {
+    color: #A05BA4;
+}
+
+.question label span:nth-of-type(4) {
+    color: #EC6A5B;
+}
+
+.question label span:nth-of-type(5) {
+    color: #A05BA4;
+}
+
+.question label span:nth-of-type(6) {
+    color: #FFC131;
+}
+
+.question label span:nth-of-type(7) {
+    color: #EC6A5B;
+}
+
+.question label span:nth-of-type(8) {
+    color: #86A63E;
+}
+
+.myform h2 span:nth-of-type(2), .myform2 h2 span:nth-of-type(2) {
+    color: #FFC131;
+}
+
+.question:first-of-type p {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    width: 60vw;
+}
+
+.question h2 {
+    font-size: 37px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 10px #0000003b;
+}
+
+.question input, .question label {
+    font-size: 42px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.question label, .question h3 {
+    text-shadow: 0px 4px 10px #0000003b;
+}
+
+.question input[type='radio'] {
+    transform: scale(2);
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.question .other span {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.question .diabete-question2.other span, .question .diabete-question2 input[type='radio'] {
+    margin-bottom: 0;
+}
+
+.diabete-question8 p {
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.myform .question h1 span, .myform2 .question h1 span {
+    display: inline;
+}
+
+.question .line-height {
+    line-height: 60px;
+}
+
+.question h4 {
+    font-size: 35px;
+}
+
+.cardio-img:hover {
+    cursor: pointer;
+}
+
+.cardio-help .popup-click, .cardio-help .popup-click-2, .help-pdf {
+    padding: 10px 20px;
+    background-color: #2E93F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cardio-help .popup-click {
+    margin-right: 15px;
+}
+
+.cardio-help .popup-wrapper, .cardio-help .popup-wrapper-2 {
+    border: 2px solid #2E93F3;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.cardio-help .popup-click p, .popup-wrapper p, .help-pdf {
+    font-size: 16px
+}
+
+.cardio-help .popup-wrapper, .cardio-popup .cardio-img, .cardio-help .popup-wrapper-2 {
+    opacity: 0;
+}
+
+.cardio-help-mobile .help-pdf a {
+    color: white;
+    text-align: center;
+}
+
+.popup-wrapper-2 a {
+    color: #80ba27;
+}
+
+.resultat p.p-result {
+    margin-bottom: 25px;
+    width: 75%;
+}
+
+.resultat p a {
+    color: #80BA27;
+}
+
+.pr5 {
+    padding-right: 50px;
+}
+
+.pl-5 {
+    padding-left: 50px;
+}
+
+.last h2 span {
+    font-size: 25px;
+}
+
+.calcul label, .calcul input, .calcul p {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.calcul p {}
+
+.calcul label, .calcul input {
+    width: 100px;
+    height: 50px;
+}
+
+.calcul label {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.calcul input {
+    margin: 0 5px 20px 20px;
+}
+
+.calcul .value1, .calcul .value2 {
+    cursor: text;
+}
+
+.calcul .res1 {
+    cursor: not-allowed;
+}
+
+.otherLast h2 {
+    margin-bottom: 10px;
+}
+
+.container-test .left, .container-test .right {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 500px;
+    font-weight: bold;
+    color: #D4E9FD;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.container-test .left {
+    top: -200px;
+    left: 0;
+}
+
+.container-test .right {
+    bottom: -140px;
+    right: 0px;
+}
+
+.container-test {
+    overflow: hidden;
+}
+
+.toDownload h3 {
+    font-size: 25px;
+}
+
+.toDownload .recap {
+    margin-bottom: 15px;
+    color: #141866;
+}
+
+.toDownload h2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.votreRisque h2 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.votreRisque .resultat {
+    font-size: 120px;
+}
+
+.toShow h2 {
+    color: #141866;
+    margin-bottom: 15px;
+}
+
+.toShow .resultatFirst {
+    font-size: 40px;
+}
+
+.racapTitle {
+    color: #141866;
+}
+
+/*******************************************************
+******************** 04. Banner ************************
+*******************************************************/
+
+#banner {
+    /* margin-top: 140px; */
+    height: calc(100vh - 140px);
+    width: 100vw;
+}
+
+.banner-type {
+    height: calc(70vh - 140px);
+    width: 100vw;
+}
+
+.banner-type .filtre {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(13 110 253 / 25%);
+}
+
+.banner-type h1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    color: #FFC131;
+    font-weight: bolder;
+}
+
+.container-type h2, .container-type h3, .container-type h4, .container-type h5, .container-type p, .container-type img, .container-type ul {
+    margin-bottom: 2%;
+}
+
+.container-type {
+    padding: 5% 0 5% 0;
+}
+
+.bannerImg {
+    top: 0;
+    right: 0;
+    width: 52vw;
+    height: auto;
+}
+
+.mainBanner {
+    padding-left: 10vw;
+}
+
+.mainBanner .social-banner {
+    display: flex;
+    margin-top: 4vh;
+}
+
+.mainBanner .top {
+    height: 85%;
+    padding-top: 12vh;
+}
+
+.mainBanner .left {
+    width: 40%;
+    color: #2E93F3;
+}
+
+.mainBanner h1 span:first-of-type {
+    color: #EAAE25;
+}
+
+.mainBanner h1 span:nth-of-type(2) {
+    color: #EC6A5B;
+}
+
+.mainBanner .top p {
+    width: 60%;
+    line-height: 30px;
+}
+
+.social-banner i {
+    font-size: 40px;
+    margin-right: 40px;
+    color: #2E93F3;
+}
+
+.mainBanner .bottom .line {
+    top: 50%;
+    right: 0;
+    height: 3px;
+    background-color: #2E93F3;
+    width: 70vw;
+}
+
+.paddingToprint {
+    padding: 50px 0 50px 0;
+}
+
+/*******************************************************
+******************** 05. Saviez-vous *******************
+*******************************************************/
+
+#saviez-vous {
+    text-align: center;
+    padding: 50px 0 150px 0;
+}
+
+.titreSaviez p:first-of-type {
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+}
+
+.titreSaviez span {
+    color: #86A63E;
+}
+
+.titreSaviez {
+    margin-bottom: 80px;
+}
+
+.saviez p {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.saviez p span {
+    font-size: 190px;
+}
+
+.saviez .number1 span {
+    color: #EAAE25;
+}
+
+.saviez .number2 span {
+    color: #EC6A5B;
+}
+
+.saviez .number3 span {
+    color: #86A63E;
+}
+
+.saviez .number4 span {
+    color: #A05BA4;
+}
+
+.saviez .numbers {
+    margin-bottom: 80px;
+}
+
+.saviez .patient {
+    font-size: 20px;
+}
+
+.saviez .titleNumbers {
+    font-size: 30px;
+    font-weight: 400;
+    width: 78%;
+    margin: auto;
+}
+
+#saviez-vous .left, #saviez-vous .right {
+    font-size: 450px;
+    font-weight: bold;
+    color: #D4E9FD;
+    opacity: 0.25;
+    z-index: -10;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#saviez-vous .left {
+    top: -200px;
+    left: -80px;
+}
+
+#saviez-vous .right {
+    bottom: -100px;
+    right: -80px;
+}
+
+/*******************************************************
+******************** 06. Risque ************************
+*******************************************************/
+
+#risque {
+    width: 100vw;
+    height: 500px;
+}
+
+#risque .filtre {
+    width: 100%;
+    height: 100%;
+    background-color: #D4E9FD;
+    opacity: 0.57;
+}
+
+.containRisque {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+.containRisque h2 {
+    margin-top: 20%;
+}
+
+.containRisque h2 span {
+    color: #EC6A5B;
+}
+
+.containRisque p {
+    line-height: 26px;
+}
+
+.formTest {
+    margin-top: 10%;
+    height: 80%;
+    box-shadow: -1px 4px 9px #42424261;
+    padding: 50px 50px 40px 50px;
+}
+
+.formTest1, .formTest2 {
+    background-color: white;
+}
+
+.formTest h4 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.formTest {
+    margin-bottom: 30px;
+}
+
+.formTest1 h4 {
+    color: #EAAE25;
+}
+
+.formTest2 h4 {
+    color: #EC6A5B;
+}
+
+.formTest p {
+    font-size: 16px;
+}
+
+.pl5 {
+    padding-left: 50px;
+}
+
+/*******************************************************
+******************** 06. Conseils **********************
+*******************************************************/
+
+#conseils {
+    padding: 80px 0 150px 0;
+}
+
+#conseils h2 span {
+    color: #86A63E;
+}
+
+#conseils .textConseils {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+
+#conseils .filtre {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.57;
+    z-index: 2;
+}
+
+#conseils .filtre1 {
+    background-color: #86A63E;
+}
+
+#conseils .filtre2 {
+    background-color: #EAAE25;
+}
+
+#conseils .filtre3 {
+    background-color: #EC6A5B;
+}
+
+#conseils .filtre4 {
+    background-color: #A05BA4;
+}
+
+#conseils .filtre5 {
+    background-color: #A05BA4;
+}
+
+#conseils .filtre6 {
+    background-color: #EC6A5B;
+}
+
+#conseils .filtre7 {
+    background-color: #EAAE25;
+}
+
+#conseils .filtre8 {
+    background-color: #86A63E;
+}
+
+#conseils .row {
+    max-height: 407px;
+}
+
+.conseilImgContainer {
+    height: 407px;
+}
+
+.textFiltre {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: #D4E9FD;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.textFiltre span {
+    color: white;
+}
+
+.conseilImg {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .2s linear
+}
+
+.conseilImg:hover {
+    cursor: pointer;
+    transform: scale(.97);
+}
+
+a.link-conseil {
+    display: unset;
+}
+
+/*******************************************************
+******************** 07. Partenaires *******************
+*******************************************************/
+
+#partenaire {
+    padding: 150px 0 150px 0;
+}
+
+.textPart {
+    width: 70%;
+}
+
+#partenaire h2 span {
+    color: #A05BA4;
+}
+
+#partenaire .left {
+    font-size: 450px;
+    top: -158px;
+    left: -33%;
+    color: #D4E9FD;
+    opacity: 0.25;
+    font-weight: bold;
+    z-index: -1;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*******************************************************
+******************** 08. Footer ************************
+*******************************************************/
+
+#footer {
+    padding-bottom: 50px;
+}
+
+#footer .logo {
+    width: 80%;
+}
+
+.textFooter {
+    width: 80%;
+    color: #141866;
+    font-size: 16px;
+}
+
+#footer h4 {
+    font-size: 40px;
+}
+
+.infoFooter a, .infoFooter p {
+    font-size: 16px;
+    color: #2E93F3;
+}
+
+.infoFooter .liens a {
+    font-weight: 500;
+}
+
+.infoFooter .contact a, .infoFooter .contact p {
+    color: #141866;
+}
+
+.infoFooter .contact a:hover, .infoFooter .liens a:hover {
+    text-decoration: underline;
+}
+
+.infoFooter .contact i {
+    padding-right: 20px;
+    color: #2E93F3;
+    width: 25px;
+}
+
+/*******************************************************
+******************** PAGES TYPES ********************
+*******************************************************/
+
+a.link-practicien {
+    color: #86A63E;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.container-type .col-lg-9 {
+    padding-left: 2%;
+}
+
+/*******************************************************
+******************** 08. Responsive ********************
+*******************************************************/
+
+@media screen and (max-width: 1630px) {
+    #banner h1 {
+        font-size: 40px;
+    }
+    .mainBanner .top p {
+        width: 70%;
+    }
+    .social-banner i {
+        font-size: 30px;
+    }
+    .bannerImg {
+        width: 50vw;
+    }
+    .container-test .left, .container-test .right {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 380px;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 377px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cardio-popup img.cardio-img.abs {
+        min-width: 175%!important;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .saviez p {
+        font-size: 80px;
+    }
+    .saviez p span {
+        font-size: 140px;
+    }
+    .saviez .titleNumbers {
+        font-size: 25px;
+    }
+    #saviez-vous .left, #saviez-vous .right {
+        font-size: 400px;
+    }
+    .conseilImgContainer {
+        height: 330px;
+    }
+    #partenaire .left {
+        font-size: 330px;
+        top: -125px;
+    }
+    .toDownload .back {
+        top: 13px;
+        left: 150px;
+    }
+    .container-test .left {
+        top: -100px;
+        left: 0;
+    }
+    .container-test .right {
+        bottom: -70px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .formTest h4 {
+        font-size: 20px;
+    }
+    .formTest {
+        padding: 30px 50px 40px 50px;
+    }
+    #risque {
+        width: 100vw;
+        height: 475px;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 320px;
+    }
+    .question input, .question label {
+        font-size: 40px;
+    }
+    .question h2 {
+        font-size: 35px;
+        font-weight: 200;
+        margin-bottom: 40px;
+    }
+    .countPage {
+        font-size: 30px;
+    }
+    .countPage span {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+  
+  .menu li a {
+  
+      font-size: 15px;
+  }
+  
+    .menu li {
+        margin-left: .75rem;
+    }
+    
+    .menu .logo-ulb {
+        width: 120px;
+    }
+    
+    .menu {
+        height: 100px;
+    }
+    #banner {
+        height: calc(100vh - 100px);
+    }
+    .container-test {
+        height: calc(100vh - 100px);
+    }
+    .myform, .myform2 {
+        height: calc(100vh - 100px);
+    }
+    .mainBanner .top p {
+        width: 100%;
+    }
+    .bannerImg {
+        width: 53vw;
+    }
+    .mainBanner .bottom .line {
+        width: 63vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .question .other span {
+        margin-bottom: 0;
+    }
+    .cardio-help-mobile {
+        display: flex!important;
+    }
+    .cardio-help{
+        display: none!important;
+    }
+    .formTest {
+        height: 90%;
+    }
+    #banner {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .question input[type='radio'] {
+        transform: scale(1.5);
+        margin-right: 20px;
+    }
+    .question h4 {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+    .small {
+        font-size: 16px;
+    }
+    .question input, .question label {
+        font-size: 24px;
+    }
+    .question h2 {
+        font-size: 28px;
+        width: 90%;
+    }
+    .back {
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #banner h1 {
+        font-size: 38px;
+    }
+    .mainBanner .top p {
+        font-size: 16px;
+    }
+    #saviez-vous {
+        padding: 0 0 50px 0;
+    }
+    .saviez .titleNumbers {
+        font-size: 20px;
+    }
+    .formTest {
+        margin-bottom: 30px;
+    }
+    .formTest1 {
+        background-color: white;
+    }
+    .formTest {
+        padding: 30px 15px 30px 15px;
+    }
+    .formTest p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .conseilImgContainer {
+        height: 240px;
+    }
+    .textFiltre {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .textPart {
+        width: 90%;
+    }
+    #partenaire {
+        padding: 50px 0 50px 0;
+    }
+    #partenaire .left {
+        font-size: 250px;
+        top: -105px;
+        left: -43%;
+    }
+    .textFooter {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    #footer h4 {
+        font-size: 30px;
+    }
+    .infoFooter a, .infoFooter p {
+        font-size: 14px;
+        color: #2E93F3;
+    }
+    .social-banner i {
+        font-size: 20px;
+    }
+    #saviez-vous .left, #saviez-vous .right {
+        font-size: 300px;
+    }
+    #saviez-vous .left {
+        top: -160px;
+        left: -53px;
+    }
+    #saviez-vous .right {
+        bottom: -45px;
+        right: -55px;
+    }
+    .mainBanner .top p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #footer {
+        padding-bottom: 15px;
+    }
+    .otherLast .small {
+        text-align: center;
+    }
+    .calcul input::placeholder {
+        font-size: 16px;
+        margin: 0 0 10px 10px;
+    }
+    .toDownload .back {
+        top: 8px;
+        left: 322px;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 285px;
+    }
+    .question .final.buton {
+        width: 250px;
+        height: 40px;
+    }
+    .question .download.buton {
+        width: 350px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  
+  .menu li a {
+      font-size: 18px;
+  }
+  
+  .menu .logo-ulb {
+      width: 130px;
+  }
+  
+  .menu .logo.care-test {
+      min-width: 120px!important;
+  }
+  
+    .submenu2, .submenu3 {
+        display: none!important;
+    }
+    .menuResp {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+    }
+    .question input, .question label {
+        font-size: 28px;
+    }
+    .open {
+        right: 0;
+    }
+    .menu .logo {
+        width: 400px;
+    }
+    .hamburger {
+        z-index: 9999;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar li {
+        margin-bottom: 20px
+    }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #2E93F3;
+        outline: none;
+    }
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+        background-color: #EC6A5B;
+    }
+    .menuResp.open {
+        right: 0;
+        animation-name: menuOpen;
+        animation-duration: .5s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes menuOpen {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0;
+        }
+    }
+    .calcul label, .calcul input {
+        width: 68px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .calcul input {
+        margin: 0 5px 20px 0px;
+    }
+    .calcul p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-container iframe {
+        height: 300px;
+    }
+    .container-test .left {
+        top: 0;
+        left: 0;
+    }
+    .container-test .right {
+        bottom: 190px;
+        right: 0px;
+    }
+    .question input, .question label {
+        font-size: 28px;
+    }
+    .question h2 {
+        font-size: 25px;
+    }
+    .calcul input {
+        margin: 0;
+    }
+    .toDownload .back {
+        top: 0px;
+        left: 100px;
+    }
+    .container3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container3In {
+        display: flex;
+        flex-direction: column
+    }
+    .pl5 {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .countPage {
+        font-size: 16px;
+        right: 15px;
+        bottom: 15px;
+    }
+    .countPage span {
+        font-size: 40px;
+    }
+    .otherLast h2 {
+        margin-bottom: 10px;
+    }
+    .toDownload h3 {
+        font-size: 18px;
+    }
+    .toShow {
+        padding-bottom: 100px;
+    }
+    .divOther {
+        padding-left: 0;
+    }
+    .bannerImg {
+        width: 100vw;
+        z-index: -9;
+    }
+    #banner h1 {
+        font-size: 66px;
+        width: 80vw;
+    }
+    .mainBanner .top {
+        height: 85%;
+        padding-top: 6vh;
+    }
+    .mainBanner .top p {
+        font-size: 16px;
+        line-height: 25px;
+        width: 85vw;
+        padding-top: 6vh;
+    }
+    .mainBanner .bottom .line {
+        width: 54vw;
+    }
+    .containRisque h2 {
+        margin-top: 5%;
+    }
+    #risque {
+        width: 100vw;
+        height: 920px;
+    }
+    /* .lessMargin {
+    margin-top: -260px;
+  } */
+    .formTest h4 {
+        font-size: 28px;
+    }
+    .conseilImgContainer {
+        height: 325px;
+        margin-bottom: 100px;
+    }
+    #conseils {
+        margin-bottom: 350px;
+    }
+    .textPart {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #partenaire .left {
+        font-size: 131px;
+        top: -59px;
+        left: 0;
+    }
+    #footer .logo {
+        display: flex;
+        margin: auto;
+        width: 75%;
+    }
+    .textFooter {
+        margin: auto;
+        text-align: center;
+    }
+    .footer-area .social-banner {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .help-pdf {
+        margin: 0 1rem;
+    }
+    .slick-prev.slick-arrow {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        font-size: 14px;
+    }
+    .question h4 {
+        font-size: 18px;
+        margin-bottom: 0.7em;
+    }
+    .question input[type='radio'] {
+        transform: scale(1.2);
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .myform .question span, .myform h2 span {
+        display: unset;
+    }
+    .container-type p {
+        font-size: 16px;
+    }
+    .container-type p.en-tete {
+        font-size: 18px;
+    }
+    .myform h1, .myform2 h1 {
+        font-size: 50px;
+    }
+    .question:first-of-type p {
+        font-size: 16px;
+        width: 90vw;
+    }
+    .question .buton {
+        width: 340px;
+    }
+    .question input, .question label {
+        font-size: 25px;
+    }
+    .question h2 {
+        font-size: 20px;
+    }
+    .pl5 {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .container3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container3In {
+        display: flex;
+        flex-direction: column
+    }
+    .small {
+        font-size: 12px;
+        /* margin-top: -35px; */
+    }
+    .pr5 {
+        padding: 0;
+    }
+    .otherLast h2 {
+        margin-bottom: 10px;
+    }
+    .calcul {
+        display: none !important;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 200px;
+    }
+    #banner h1 {
+        font-size: 50px;
+        width: 80vw;
+    }
+    .mainBanner .top p {
+        width: 79vw;
+    }
+    .mainBanner .bottom .line {
+        width: 47vw;
+    }
+    #saviez-vous .left, #saviez-vous .right {
+        font-size: 210px;
+    }
+    #saviez-vous .left {
+        top: -140px;
+        left: -24px;
+    }
+    #saviez-vous .right {
+        bottom: 250px;
+        right: -42px;
+    }
+    .titreSaviez p:first-of-type {
+        width: 65vw;
+    }
+    #conseils .textConseils {
+        width: 65vw;
+    }
+    #conseils {
+        margin-bottom: 1260px;
+    }
+    .textFooter {
+        font-size: 14px;
+    }
+    .infoFooter p {
+        display: block;
+    }
+    .liens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container-type img.consulte-picto {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 1rem 0 3rem 0;
+    }
+    .container-type {
+        margin: 2rem 0;
+    }
+    .container-type h2, .container-type h3, .container-type h4, .container-type h5, .container-type p, .container-type img, .container-type ul {
+        margin-bottom: 4%;
+    }
+    .banner-type h1 {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-type {
+        height: calc(50vh - 140px);
+    }
+    .menu li:last-of-type a.list5 {
+        font-size: 16px;
+    }
+    .menu li a {
+        font-size: 20px;
+        line-height: 2.5rem;
+    }
+    .textFooter {
+        width: 100%;
+    }
+    #saviez-vous .right {
+        top: -25px;
+        right: 0;
+    }
+    #conseils {
+        margin-bottom: 1140px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .formTest {
+        height: auto;
+    }
+    .saviez p {
+        font-size: 70px;
+    }
+    .saviez p span {
+        font-size: 100px;
+    }
+    .mainBanner .top p {
+        padding-top: 0;
+    }
+    .resultat p.p-result {
+        font-size: 16px;
+    }
+    .container-type img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 2rem 0;
+    }
+    .question input, .question label {
+        font-size: 18px;
+    }
+    .question h2 {
+        font-size: 20px;
+    }
+    .back {
+        width: 17px;
+    }
+    .small {
+        font-size: 20px;
+        margin-left: 41px;
+    }
+    .question h2 {
+        width: 85%;
+    }
+    .toDownload .recap {
+        margin-bottom: 9px;
+        color: #141866;
+        font-size: 14px;
+    }
+    .toDownload h3 {
+        font-size: 16px;
+    }
+    .votreRisque .resultat {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    /* .question:first-of-type p {
+        width: 75vw;
+    } */
+    .myform h1, .myform2 h1 {
+        font-size: 35px;
+    }
+    .toDownload h2 {
+        font-size: 24px;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 33px;
+    }
+    .toDownload .back {
+        top: 0px;
+        left: 40px;
+    }
+    .small {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 150px;
+    }
+    .menu .logo {
+        width: 134px;
+        max-width: 180%;
+    }
+    .bannerImg {
+        width: 90vw;
+    }
+    #banner h1 {
+        font-size: 35px;
+    }
+    .mainBanner .bottom .line {
+        width: 29vw;
+    }
+    #saviez-vous .left, #saviez-vous .right {
+        font-size: 75px;
+    }
+    #saviez-vous .left {
+        top: -60px;
+        left: 0;
+    }
+    .saviez:first-of-type {
+        margin-bottom: 65px;
+    }
+    .titreSaviez p:first-of-type {
+        width: 80vw;
+        font-size: 16px;
+    }
+    .saviez .titleNumbers {
+        width: 85%;
+        font-size: 18px;
+    }
+    .saviez .titleNumbers span {
+        display: unset;
+    }
+    .saviez .numbers {
+        margin-bottom: 50px;
+    }
+    .containRisque h2 {
+        margin-top: 10%;
+    }
+    #risque {
+        height: 1015px;
+    }
+    #partenaire .left {
+        font-size: 55px;
+        top: -17px;
+        left: 0;
+    }
+    .containRisque p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+    #conseils .textConseils {
+        width: 75vw;
+        font-size: 16px;
+    }
+    .question .first.buton {
+        width: 290px;
+        height: 46px;
+    }
+    .question .download.buton {
+        width: 300px;
+        height: 55px;
+    }
+    .question .download.buton p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .question input, .question label {
+        font-size: 16px;
+    }
+    .small {
+        font-size: 10px;
+    }
+    .myform h1, .myform2 h1 {
+        font-size: 30px;
+    }
+    .question:first-of-type p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .toDownload .recap {
+        margin-bottom: 3px;
+    }
+    .toDownload h2 {
+        margin-bottom: 5px;
+    }
+    .toDownload .back {
+        top: 0px;
+        left: 23px;
+    }
+    .container-test .left, .container-test .right {
+        font-size: 136px;
+    }
+    #banner h1 {
+        font-size: 24px;
+    }
+    .mainBanner .top p {
+        font-size: 14px;
+    }
+    .mainBanner .bottom .line {
+        width: 24vw;
+    }
+    .titreSaviez p:first-of-type {
+        width: 80vw;
+        font-size: 14px;
+    }
+    .containRisque p {
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .formTest h4 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .textPart {
+        font-size: 14px;
+    }
+}
