@@ -18,6 +18,8 @@
     <meta name="description" content="">
     <!-- base href="https://caretest.be/" --> <!-- favicon -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="https://caretest.be/CMS/content/logo/favicon.png">
     <meta property="og:url" content="http://caretest.be//fr/accueil/">
     <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/slick.css">
@@ -50,9 +52,9 @@
             <div class="row">
                 <div class="col d-flex align-items-center">
                     <a class="navbar-brand" href="#">
-                        <img class="logo care-test" src="{{ asset('média/acceuil/fichier/logo.svg') }}" alt="Logo Care Test">
+                        <img class="logo care-test" src="{{ asset('média/acceuil/logo.svg') }}" alt="Logo Care Test">
                     </a>
-                    <img class="logo-ulb" src="{{ asset('média/acceuil/fichier/ulb.png') }}" alt="Logo ULB">
+                    <img class="logo-ulb" src="{{ asset('média/acceuil/ulb.png') }}" alt="Logo ULB">
                 </div>
                 <div class="col col-lg-8 d-flex justify-content-end">
                     <button class="hamburger hamburger--spin d-lg-none d-block" type="button">
@@ -102,7 +104,7 @@
                                 précoce et l’évaluation des facteurs de risques liés au diabète et aux
                                 maladies cardiovasculaires.</span></p>
                     </div>
-                    <img class="bannerImg abs" src="Accueil%20-%20Care-test_fichiers/imageBannerCaretest.svg" alt="image bannière">
+                    <img class="bannerImg abs" src="{{ asset('média/Acceuil/imageBannerCaretest.svg') }}" alt="image bannière">
                 </div>
                 <div class="bottom rel">
                     <!-- <div class="social-banner">
@@ -148,7 +150,7 @@
             <div id="risqueTo"></div>
         </div>
     </section>
-    <section data-aos="fade-up" id="risque" class="bg_cover rel aos-init" style="background-image: url(&quot;CMS/content/images/202106/1920x475-58624.png&quot;);" "="">
+    <section data-aos="fade-up" id="risque" class="bg_cover rel aos-init" style="background-image: url('{{ asset('média/Acceuil/1920x475-58624.png') }}')">
 		<div class=" filtre abs">
         </div>
         <div class="container-fluid container-custom containRisque abs">
@@ -198,7 +200,7 @@
             <div class="row">
                 <div data-aos="fade-left" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
                     <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
-                        <div class="rel conseilImg" style="background-image: url(&quot;CMS/content/images/202106/800x969-11.png&quot;);">
+                        <div class="rel conseilImg" style="background-image: url('{{ asset('média/Acceuil/800x969-11.png') }}')">
                             <div class="filtre filtre1 abs"></div>
                             <h4 class="abs textFiltre">Manger <span>mieux</span></h4>
 
@@ -210,7 +212,7 @@
                 </div>
                 <div data-aos="fade-left" data-aos-delay="500" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
                     <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
-                        <div class="rel conseilImg" style="background-image: url(&quot;CMS/content/images/202106/800x969-12.png&quot;);">
+                        <div class="rel conseilImg" style="background-image: url('{{ asset('média/Acceuil/800x969-12.png') }}')">
                             <div class="filtre filtre2 abs"></div>
                             <h4 class="abs textFiltre">Bouger <span>plus</span></h4>
 
@@ -222,7 +224,7 @@
                 </div>
                 <div data-aos="fade-right" data-aos-delay="500" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
                     <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
-                        <div class="rel conseilImg" style="background-image: url(&quot;CMS/content/images/202106/800x969-13.png&quot;);">
+                        <div class="rel conseilImg" style="background-image: url('{{ asset('média/Acceuil/800x969-13.png') }}')">
                             <div class="filtre filtre3 abs"></div>
                             <h4 class="abs textFiltre">Vivre <br><span>mieux</span></h4>
 
@@ -234,7 +236,7 @@
                 </div>
                 <div data-aos="fade-right" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
                     <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
-                        <div class="rel conseilImg" style="background-image: url(&quot;CMS/content/images/202106/800x969-14.png&quot;);">
+                        <div class="rel conseilImg" style="background-image: url('{{ asset('média/Acceuil/800x969-14.png') }}')">
                             <div class="filtre filtre4 abs"></div>
                             <h4 class="abs textFiltre">Mon programme<span>en 28J</span></h4>
 
@@ -263,31 +265,31 @@
                 <div class="col-lg-7 col-12">
                     <div class="row">
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-26.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-26.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-27.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-27.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-28.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-28.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-29.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-29.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-30.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-30.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/groupe-de-masques-32.svg" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/groupe-de-masques-32.svg') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/300x183-famgb.png" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/300x183-famgb.png') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/300x127-ssmg.png" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/300x127-ssmg.png') }}" alt="Logo partenaire">
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="Accueil%20-%20Care-test_fichiers/300x168-acn.png" alt="Logo partenaire">
+                            <img src="{{ asset('média/Acceuil/300x168-acn.png') }}" alt="Logo partenaire">
                         </div>
                     </div>
 
@@ -308,7 +310,7 @@
                     <div class="row">
                         <div class="col-lg-5 col-12">
                             <a class="navbar-brand mb-3" href="#">
-                                <img class="logo" src="Accueil%20-%20Care-test_fichiers/logo.svg" alt="Logo">
+                                <img class="logo" src="{{ asset('média/Acceuil/logo.svg') }}" alt="Logo">
                             </a>
                             <p class="mb-lg-5 mb-0 textFooter">Le projet Care-Test vise à
                                 sensibiliser les citoyens à l’importance du dépistage précoce et
@@ -348,23 +350,6 @@
             Designed and Developed with <i class="fal fa-smile" style="color: #2E93F3"></i> by <a style="color: #2E93F3" target="_blank" href="http://ohmedias.com/">Oh! médias</a></div>
 
     </footer>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/fontawesome-all.min.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/LineIcons.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/bootstrap-icons.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/aos.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/default.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/hamburgers.css" type="text/css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/style.css" type="text/css">
-    <script src="Accueil%20-%20Care-test_fichiers/jquery-3.5.1.min.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/popper.min.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/bootstrap.min.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/aos.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/slick.min.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/html2canvas.min.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/FileSaver.js"></script>
-    <script src="Accueil%20-%20Care-test_fichiers/script.js"></script> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}" type="text/css">
