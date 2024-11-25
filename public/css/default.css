@@ -930,3 +930,14 @@
 [data-overlay="9"]::before {
 	opacity: 0.9;
 }
+
+.navbar-area {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	/* Assure que la navbar reste au-dessus du contenu */
+	background-color: #fff;
+	/* Fond pour éviter que le contenu en dessous soit visible */
+}
