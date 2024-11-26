@@ -18,17 +18,15 @@
     <meta name="description" content="">
     <!-- base href="https://caretest.be/" --> <!-- favicon -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel='icon' href='CMS/content/logo/favicon.png' />
+    <meta property="og:url" content="http://www.caretest.be//fr/accueil/" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="https://caretest.be/CMS/content/logo/favicon.png">
-    <meta property="og:url" content="http://caretest.be//fr/accueil/">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/slick.css">
-    <link rel="stylesheet" href="Accueil%20-%20Care-test_fichiers/style.css">
-    <meta property="og:image" content="http://caretest.be//CMS/">
-    <meta property="og:image:width" content="">
-    <meta property="og:image:height" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.caretest.be//CMS/" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:height" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
 
 </head>
 
@@ -69,18 +67,18 @@
                         <li><a class="list1" href="{{ route('a-propos') }}">À propos</a></li>
                         <li><a class="list2" href="{{ route('risques') }}"> Risques</a>
                             <ul style="padding: 7px; " class="submenu2">
-                                <li><a href="https://caretest.be/fr/risques/#diabete" class="">Diabète</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#hypertension" class="">Hypertension</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#facteurs" class="">Facteurs de risques</a></li>
+                                <li><a href="{{ route('risques') }}#diabete" class="">Diabète</a></li>
+                                <li><a href="{{ route('risques') }}#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('risques') }}#facteurs" class="">Facteurs de risques</a></li>
                             </ul>
                         </li>
                         <li><a class="list3" href="{{ route('conseils') }}">Conseils</a>
                             <ul style="padding: 7px; " class="submenu3">
-                                <li><a href="https://caretest.be/fr/conseils/#alimentation" class="">Alimentation</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#glycemie" class="">Indice glycémique</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#choix" class="">Nutriscore</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#sedentarite" class="">Sédentarité</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('conseils') }}#alimentation" class="">Alimentation</a></li>
+                                <li><a href="{{ route('conseils') }}#glycemie" class="">Indice glycémique</a></li>
+                                <li><a href="{{ route('conseils') }}#choix" class="">Nutriscore</a></li>
+                                <li><a href="{{ route('conseils') }}#sedentarite" class="">Sédentarité</a></li>
+                                <li><a href="{{ route('conseils') }}#hypertension" class="">Hypertension</a></li>
                             </ul>
                         </li>
                         <li><a class="list4" href="{{ route('medecins_praticien') }}">Je consulte</a></li>
@@ -150,7 +148,7 @@
             <div id="risqueTo"></div>
         </div>
     </section>
-    <section data-aos="fade-up" id="risque" class="bg_cover rel aos-init" style="background-image: url('{{ asset('média/Acceuil/1920x475-58624.png') }}')">
+    <section data-aos="fade-up" id="risque" class="bg_cover rel aos-init" style="background-image: url('{{ asset('media/Acceuil/1920x475-58624.png') }}')">
         <div class=" filtre abs">
         </div>
         <div class="container-fluid container-custom containRisque abs">
@@ -333,9 +331,9 @@
 					   </div>
 					   <div class=" col-md-6 col-12 contact d-flex flex-column">
                                             <h4 class="mb-4 mt-4">Contact</h4>
-                                            <a class="mb-2" href="mailto:sarah.rondeaux@ulb.be"><i class="fas fa-globe"></i>sarah.rondeaux@ulb.be</a>
-                                            <a class="mb-2" href="tel:003226505310"><i class="fas fa-mobile-alt"></i>+32 (0)2 650 53 10</a>
-                                            <a href="https://goo.gl/maps/bKjbRwwh3jDCrevd6" target="_blank"><i class="fas fa-map-marker-alt"></i>Campus de la Plaine - CP 205/07 Boulevard du Triomphe, ACC.2 1050 Bruxelles</a>
+                                            <a class="mb-2" href="mailto:sarah.rondeaux@ulb.be"><i class="fa-solid fa-globe"></i></i>sarah.rondeaux@ulb.be</a>
+                                            <a class="mb-2" href="tel:003226505310"><i class="fa-solid fa-mobile"></i>+32 (0)2 650 53 10</a>
+                                            <a href="https://goo.gl/maps/bKjbRwwh3jDCrevd6" target="_blank"><i class="fa-solid fa-location-dot"></i>Campus de la Plaine - CP 205/07 Boulevard du Triomphe, ACC.2 1050 Bruxelles</a>
                                 </div>
                             </div>
                         </div>
@@ -350,13 +348,11 @@
     </footer>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/LineIcons.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/hamburgers.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
 
-    <script src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/html2canvas.min.js') }}"></script>
     <script src="{{ asset('js/FileSaver.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>

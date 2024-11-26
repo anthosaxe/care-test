@@ -28,7 +28,7 @@
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="https://caretest.be/CMS/content/logo/favicon.png">
     <meta property="og:url" content="http://caretest.be//fr/accueil/">
@@ -76,18 +76,18 @@
                         <li><a class="list1" href="{{ route('a-propos') }}">À propos</a></li>
                         <li><a class="list2" href="{{ route('risques') }}"> Risques</a>
                             <ul style="padding: 7px; " class="submenu2">
-                                <li><a href="https://caretest.be/fr/risques/#diabete" class="">Diabète</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#hypertension" class="">Hypertension</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#facteurs" class="">Facteurs de risques</a></li>
+                                <li><a href="{{ route('risques') }}#diabete" class="">Diabète</a></li>
+                                <li><a href="{{ route('risques') }}#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('risques') }}#facteurs" class="">Facteurs de risques</a></li>
                             </ul>
                         </li>
                         <li><a class="list3" href="{{ route('conseils') }}">Conseils</a>
                             <ul style="padding: 7px; " class="submenu3">
-                                <li><a href="https://caretest.be/fr/conseils/#alimentation" class="">Alimentation</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#glycemie" class="">Indice glycémique</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#choix" class="">Nutriscore</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#sedentarite" class="">Sédentarité</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('conseils') }}#alimentation" class="">Alimentation</a></li>
+                                <li><a href="{{ route('conseils') }}#glycemie" class="">Indice glycémique</a></li>
+                                <li><a href="{{ route('conseils') }}#choix" class="">Nutriscore</a></li>
+                                <li><a href="{{ route('conseils') }}#sedentarite" class="">Sédentarité</a></li>
+                                <li><a href="{{ route('conseils') }}#hypertension" class="">Hypertension</a></li>
                             </ul>
                         </li>
                         <li><a class="list4" href="{{ route('medecins_praticien') }}">Je consulte</a></li>
@@ -106,7 +106,7 @@
 
     <form action="?" class="myform rel">
 
-    <div class="question toNext rel bg_cover" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}'); filter: opacity(0.5);">
+        <div class="question toNext rel bg_cover" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}'); filter: opacity(0.5);">
 
             <h1 class="mb-4">Évaluez votre <br><span>risque</span> de <span>diabète</span></h1>
             <p class="text_form">
@@ -424,8 +424,7 @@
         window.onload = function() {
             setTimeout(function() {
                 const loader = document.querySelector('.containLoader');
-                loader.style.display = 'none'; 
-            }, 2000); 
+                loader.style.display = 'none';
+            }, 2000);
         };
     </script>
-

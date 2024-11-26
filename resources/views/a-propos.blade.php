@@ -90,18 +90,18 @@
                         <li><a class="list1" href="{{ route('a-propos') }}">À propos</a></li>
                         <li><a class="list2" href="{{ route('risques') }}"> Risques</a>
                             <ul style="padding: 7px; " class="submenu2">
-                                <li><a href="https://caretest.be/fr/risques/#diabete" class="">Diabète</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#hypertension" class="">Hypertension</a></li>
-                                <li><a href="https://caretest.be/fr/risques/#facteurs" class="">Facteurs de risques</a></li>
+                                <li><a href="{{ route('risques') }}#diabete" class="">Diabète</a></li>
+                                <li><a href="{{ route('risques') }}#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('risques') }}#facteurs" class="">Facteurs de risques</a></li>
                             </ul>
                         </li>
                         <li><a class="list3" href="{{ route('conseils') }}">Conseils</a>
                             <ul style="padding: 7px; " class="submenu3">
-                                <li><a href="https://caretest.be/fr/conseils/#alimentation" class="">Alimentation</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#glycemie" class="">Indice glycémique</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#choix" class="">Nutriscore</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#sedentarite" class="">Sédentarité</a></li>
-                                <li><a href="https://caretest.be/fr/conseils/#hypertension" class="">Hypertension</a></li>
+                                <li><a href="{{ route('conseils') }}#alimentation" class="">Alimentation</a></li>
+                                <li><a href="{{ route('conseils') }}#glycemie" class="">Indice glycémique</a></li>
+                                <li><a href="{{ route('conseils') }}#choix" class="">Nutriscore</a></li>
+                                <li><a href="{{ route('conseils') }}#sedentarite" class="">Sédentarité</a></li>
+                                <li><a href="{{ route('conseils') }}#hypertension" class="">Hypertension</a></li>
                             </ul>
                         </li>
                         <li><a class="list4" href="{{ route('medecins_praticien') }}">Je consulte</a></li>
@@ -155,7 +155,7 @@
                     <div class="row">
                         <div class="col-lg-5 col-12">
                             <a class="navbar-brand mb-3" href="#">
-                                <img class="logo" src="{{asset('media/a propos/logo.svg')}}" alt="Logo">
+                                <img class="logo" src="{{ asset('media/Acceuil/logo.svg') }}" alt="Logo">
                             </a>
                             <p class="mb-lg-5 mb-0 textFooter">Le projet Care-Test vise à
                                 sensibiliser les citoyens à l’importance du dépistage précoce et
@@ -178,9 +178,9 @@
 					   </div>
 					   <div class=" col-md-6 col-12 contact d-flex flex-column">
                                             <h4 class="mb-4 mt-4">Contact</h4>
-                                            <a class="mb-2" href="mailto:sarah.rondeaux@ulb.be"><i class="fas fa-globe"></i>sarah.rondeaux@ulb.be</a>
-                                            <a class="mb-2" href="tel:003226505310"><i class="fas fa-mobile-alt"></i>+32 (0)2 650 53 10</a>
-                                            <a href="https://goo.gl/maps/bKjbRwwh3jDCrevd6" target="_blank"><i class="fas fa-map-marker-alt"></i>Campus de la Plaine - CP 205/07 Boulevard du Triomphe, ACC.2 1050 Bruxelles</a>
+                                            <a class="mb-2" href="mailto:sarah.rondeaux@ulb.be"><i class="fa-solid fa-globe"></i></i>sarah.rondeaux@ulb.be</a>
+                                            <a class="mb-2" href="tel:003226505310"><i class="fa-solid fa-mobile"></i>+32 (0)2 650 53 10</a>
+                                            <a href="https://goo.gl/maps/bKjbRwwh3jDCrevd6" target="_blank"><i class="fa-solid fa-location-dot"></i>Campus de la Plaine - CP 205/07 Boulevard du Triomphe, ACC.2 1050 Bruxelles</a>
                                 </div>
                             </div>
                         </div>
