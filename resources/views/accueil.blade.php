@@ -16,13 +16,10 @@
     <title>Accueil - Care-test</title>
     <meta property="og:title" content="Accueil - Care-test">
     <meta name="description" content="">
-    <!-- base href="https://caretest.be/" --> <!-- favicon -->
+    <link rel='icon' href="{{ asset('media/favicon.png') }}" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel='icon' href='CMS/content/logo/favicon.png' />
-    <meta property="og:url" content="http://www.caretest.be//fr/accueil/" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <meta property="og:image" content="http://www.caretest.be//CMS/" />
     <meta property="og:image:width" content="" />
     <meta property="og:image:height" content="" />
     <meta property="og:description" content="" />
@@ -325,9 +322,9 @@
                             <div class="row">
                                 <div class="col-md-6 col-12 liens">
                                     <h4 class="mb-4 mt-4">Liens utiles</h4>
-                                    <p class="mb-lg-2 mb-0">Livre de conseils et recommendations : <a href="https://caretest.be/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">FR</a> <a href="https://caretest.be/CMS/content/images/202108/livret-patientnl-vf.pdf" target="_blank">NL</a>
+                                    <p class="mb-lg-2 mb-0">Livre de conseils et recommendations : <a href="{{ asset('media/livret-patient-fr-vf.pdf') }}" target="_blank">FR</a> <a href="{{ asset('media/livret-patientnl-vf.pdf') }}" target="_blank">NL</a>
                                     </p>
-                                    <p>Questionnaire Findrisk : <a href="https://caretest.be/CMS/content/images/202108/Questionnaire_FR%20(VF).pdf" target="_blank">FR</a> <a href="https://caretest.be/CMS/content/images/202108/Questionnaire_NL.pdf" target="_blank" "="">NL</a> <a href=" https://caretest.be/CMS/content/images/202108/Questionnaire_EN.pdf" target="_blank">EN</a> <a href="https://caretest.be/CMS/content/images/202108/Questionnaire_AR%20(VF).pdf" target="_blank" "="">AR</a></p>
+                                    <p>Questionnaire Findrisk : <a href="{{ asset('media/Questionnaire_FR%20(VF).pdf') }}" target="_blank">FR</a> <a href="{{ asset('media/Questionnaire_NL.pdf') }}" target="_blank">NL</a> <a href="{{ asset('media/Questionnaire_EN.pdf') }}" target="_blank">EN</a> <a href="{{ asset('media/Questionnaire_AR%20(VF).pdf') }}" target="_blank" >AR</a></p>
 					   </div>
 					   <div class=" col-md-6 col-12 contact d-flex flex-column">
                                             <h4 class="mb-4 mt-4">Contact</h4>
@@ -348,25 +345,20 @@
     </footer>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ asset('css/LineIcons.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/hamburgers.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
-
-    <script src="{{ asset('js/html2canvas.min.js') }}"></script>
-    <script src="{{ asset('js/FileSaver.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/slick.css') }}" type="text/css">
+    
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js'></script>
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
     <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/FileSaver.js') }}"></script>
+    <script src="{{ asset('js/html2canvas.min.js') }}"></script>
+    <script src="{{ asset('js/slick.min.js') }}"></script>
 
-
-
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                const loader = document.querySelector('.containLoader');
-                loader.style.display = 'none'; // Cache le loader après un délai
-            }, 1000); // Attendre 1 seconde après le chargement de la page
-        };
-    </script>
 </body>
 
 </html>

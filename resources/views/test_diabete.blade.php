@@ -16,27 +16,13 @@
     <title>Test diabète - Care-test</title>
     <meta property="og:title" content="Test diabète - Care-test" />
     <meta name="description" content="" />
-    <base href='https://www.caretest.be/' /> <!-- favicon -->
+    <link rel='icon' href="{{ asset('media/favicon.png') }}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel='icon' href='CMS/content/logo/favicon.png' />
-    <meta property="og:url" content="http://www.caretest.be//fr/test-diabte/" />
-    <link rel="stylesheet" href="CMS/themes/care-test//css/slick.css">
-    <link rel="stylesheet" href="CMS/themes/care-test//css/style.css">
-    <meta property="og:image" content="http://www.caretest.be//CMS/content/images/202106/800xnan-groupe-17573.svg" />
     <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="nan" />
+    <meta property="og:image:height" content="390" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="https://caretest.be/CMS/content/logo/favicon.png">
-    <meta property="og:url" content="http://caretest.be//fr/accueil/">
-    <meta property="og:image" content="http://caretest.be//CMS/">
-    <meta property="og:image:width" content="">
-    <meta property="og:image:height" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
 </head>
 
 <body class="">
@@ -149,7 +135,7 @@
 
         <div class="question toNext">
 
-            <h2 class="rel text-center"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">2. Un membre de votre famille <span>est-il atteint de diabète</span> ?</h2>
+            <h2 class="rel text-center"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">2. Un membre de votre famille <span>est-il atteint de diabète</span> ?</h2>
             <div class="diabete-question2 container container-questions d-flex justify-content-center flex-column align-items-center other">
                 <div class="d-flex flex-column">
                     <span>
@@ -172,7 +158,7 @@
 
         <div class="question toNext rel">
 
-            <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">3. Quel est <span>votre taille au niveau du nombril ?</h2>
+            <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">3. Quel est <span>votre taille au niveau du nombril ?</h2>
             <div class="container container-questions d-flex flex-column">
 
                 <div class="row">
@@ -222,7 +208,7 @@
 
         <div class="question toNext rel">
 
-            <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">4. Pratiquez-vous au moins <span>30 min d’activité physique</span> par jour ?</h2>
+            <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">4. Pratiquez-vous au moins <span>30 min d’activité physique</span> par jour ?</h2>
             <div class="container container-questions d-flex flex-column">
                 <div class="row">
 
@@ -245,7 +231,7 @@
 
         <div class="question toNext rel">
 
-            <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">5. À quelle fréquence mangez-vous des <span>fruits</span> et des <span>légumes ?</span></h2>
+            <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">5. À quelle fréquence mangez-vous des <span>fruits</span> et des <span>légumes ?</span></h2>
             <div class="container container-questions d-flex flex-column">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center pr5">
@@ -267,7 +253,7 @@
 
         <div class="question toNext rel">
 
-            <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">6. Vous a-t-on déjà prescrit des <span>médicaments contre l’hypertension</span> ?</h2>
+            <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">6. Vous a-t-on déjà prescrit des <span>médicaments contre l’hypertension</span> ?</h2>
             <div class="container container-questions d-flex flex-column">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center pr5">
@@ -289,7 +275,7 @@
 
         <div class="question toNext rel">
 
-            <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">7. Vous a-t-on déjà découvert un <span>taux de sucre</span> sanguin <span>élevé ?</h2>
+            <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">7. Vous a-t-on déjà découvert un <span>taux de sucre</span> sanguin <span>élevé ?</h2>
             <div class="container container-questions d-flex flex-column">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center pr5">
@@ -312,7 +298,7 @@
 
 
             <div class="container d-flex justify-content-center flex-column align-items-center">
-                <h2 class="rel"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">8. Quel est votre <span>indice de masse corporelle ?</span>
+                <h2 class="rel"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">8. Quel est votre <span>indice de masse corporelle ?</span>
                 </h2>
                 <p class="small mb-3">
                 <p>L&rsquo;IMC est calcul&eacute; de la fa&ccedil;on suivante : poids corporel (en kg) divis&eacute; par la taille (en m) au carr&eacute;. Il peut &ecirc;tre trouv&eacute; dans des tableaux</p>
@@ -349,7 +335,7 @@
             <div class="container d-flex justify-content-center flex-column align-items-center">
 
                 <div class="row toDownload">
-                    <h2 class="rel racapTitle"><img class="back abs d-none" src="CMS/themes/care-test//images/arrow-back.svg" alt="Retour">Récapitulatif</h2>
+                    <h2 class="rel racapTitle"><img class="back abs d-none" src="{{ asset('media/arrow-back.svg') }}" alt="Retour">Récapitulatif</h2>
                     <div class="col-md-6 col-12 mx-md-0 mx-1">
 
 
@@ -400,31 +386,21 @@
         </div>
     </form>
     </div>
+</body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='CMS/themes/care-test//css/fontawesome/css/fontawesome-all.min.css' type='text/css' />
-    <link rel='stylesheet' href='CMS/themes/care-test//css/LineIcons.css' type='text/css' />
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' type='text/css' />
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css' type='text/css' />
-    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css' type='text/css' />
-    <link rel='stylesheet' href='CMS/themes/care-test//css/default.css' type='text/css' />
-    <link rel='stylesheet' href='CMS/themes/care-test//css/hamburgers.css' type='text/css' />
-    <link rel='stylesheet' href='CMS/themes/care-test//css/style.css' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/hamburgers.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/slick.css') }}" type="text/css">
 
-    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js'></script>
-    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-    <script src='CMS/themes/care-test//js/slick.min.js'></script>
-    <script src='CMS/themes/care-test//js/html2canvas.min.js'></script>
-    <script src='CMS/themes/care-test//js/FileSaver.js'></script>
-    <script src='CMS/themes/care-test//js/script.js'></script>
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js'></script>
+<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+<script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('js/FileSaver.js') }}"></script>
+<script src="{{ asset('js/html2canvas.min.js') }}"></script>
+<script src="{{ asset('js/slick.min.js') }}"></script>
 
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                const loader = document.querySelector('.containLoader');
-                loader.style.display = 'none';
-            }, 2000);
-        };
-    </script>
+</html>
