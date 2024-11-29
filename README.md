@@ -28,8 +28,10 @@ Ce projet est une reproduction d'une page internet réalisée à l'aide du frame
 1. **Cloner le dépôt** :
    ```bash
    git clone https://github.com/anthosaxe/care-test.git
+   ```
+   ```bash
    cd care-test
-
+    ```
 ---
    
 ## 📚 Structure du projet
