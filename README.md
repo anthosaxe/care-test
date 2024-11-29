@@ -30,6 +30,8 @@ Ce projet est une reproduction d'une page internet réalisée à l'aide du frame
    créer votre dossier
    cd votre dossier
    git clone https://github.com/anthosaxe/care-test.git
+
+---
    
 ## 📚 Structure du projet
 
