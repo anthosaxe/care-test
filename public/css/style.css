@@ -165,6 +165,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 80px; /* Ajustez en fonction de la hauteur de la navbar */
 }
 
 .container-custom {

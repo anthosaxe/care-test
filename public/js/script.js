@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector('.navbar-area');
+    const mainContent = document.querySelector('.main-content');
+
+    if (navbar && mainContent) {
+        const navbarHeight = navbar.offsetHeight;
+        mainContent.style.paddingTop = `${navbarHeight}px`;
+    }
+});
+
 $(document).ready(function () {
     $(function () {
         AOS.init({
@@ -244,32 +254,45 @@ $(document).ready(function () {
 
     // Second test
 
-    let sexe = "";
-    let fumeur = "";
-    let age2 = "";
-
-    $('input[name="sexe"]').change(function () {
-        sexe = $('input[name="sexe"]:checked').val();
-    });
-    $('input[name="fumeur"]').change(function () {
-        fumeur = $('input[name="fumeur"]:checked').val();
-    });
-    $('input[name="age2"]').change(function () {
-        age2 = $('input[name="age2"]:checked').val();
-    });
-
-    $('.lastCardio input').click(function () {
+    $(document).ready(function () {
+        let sexe = "";
+        let fumeur = "";
+        let age2 = "";
+    
+        // Capture les valeurs des inputs
+        $('input[name="sexe"]').change(function () {
+            sexe = $('input[name="sexe"]:checked').val();
+        });
+    
+        $('input[name="fumeur"]').change(function () {
+            fumeur = $('input[name="fumeur"]:checked').val();
+        });
+    
         $('input[name="age2"]').change(function () {
             age2 = $('input[name="age2"]:checked').val();
-
-            let image = '<img class="cardio-img" src="CMS/themes/care-test/images/tableaux/' + sexe + '/' + fumeur + '/' + age2 + '.svg" alt="Retour">';
-            $(".votreRisqueVasculaire").append(image);
-            console.log(sexe + fumeur + age2);
+    
+            // Assurez-vous que toutes les valeurs sont définies
+            if (sexe && fumeur && age2) {
+                // Créez dynamiquement le chemin de l'image en utilisant window.location.origin
+                let baseUrl = window.location.origin + "/media/risque_cardio";  // Base URL
+    
+                // Assemblez le chemin complet
+                let imagePath = `${baseUrl}/${sexe}/${fumeur}/${age2}.svg`;
+    
+                // Supprimez les anciennes images si nécessaire
+                $(".votreRisqueVasculaire .cardio-img").remove();
+    
+                // Ajoutez la nouvelle image
+                let image = `<img class="cardio-img" src="${imagePath}" alt="Risque cardiovasculaire">`;
+                $(".votreRisqueVasculaire").append(image);
+    
+                console.log("Chemin généré :", imagePath);
+            } else {
+                console.log("Toutes les options ne sont pas encore sélectionnées.");
+            }
         });
     });
-
-
-
+    
     // Cardio help popup
     $(".popup-click").click(function () {
         $('.popup-wrapper').removeClass('d-none')
