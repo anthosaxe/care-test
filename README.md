@@ -32,6 +32,34 @@ Ce projet est une reproduction d'une page internet réalisée à l'aide du frame
    ```bash
    cd care-test
     ```
+
+2. **Installer les dépendances** :
+    ```bash
+   composer install
+   ```
+   ```bash
+   npm install 
+
+   ```
+
+3. **Configurer l'environnement** :
+    - retirer .exemple du  fichier .env.exemple
+
+4. **Générer une clé d'application** :
+    ```bash
+   php artisan key:generate
+
+   ```
+
+5. **Lancer le serveur local** :
+    ```bash
+   php artisan serve
+
+
+   ```
+
+6. **Accéder à l'application** :
+    - Ouvrez votre navigateur et accédez à http://localhost:8000
 ---
    
 ## 📚 Structure du projet
