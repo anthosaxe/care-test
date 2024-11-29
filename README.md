@@ -27,8 +27,8 @@ Ce projet est une reproduction d'une page internet réalisée à l'aide du frame
 
 1. **Cloner le dépôt** :
    ```bash
-   créer votre dossier
-   cd votre dossier
+   mkdir votre_dossier
+   cd votre_dossier
    git clone https://github.com/anthosaxe/care-test.git
 
 ---
