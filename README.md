@@ -55,7 +55,6 @@ Ce projet est une reproduction d'une page internet réalisée à l'aide du frame
     ```bash
    php artisan serve
 
-
    ```
 
 6. **Accéder à l'application** :
