@@ -202,6 +202,8 @@ $(document).ready(function () {
 
     });
 
+    // LIENS MORTS HOMEDIA
+
     $('.final').click(function () {
 
         let total = 0;
@@ -213,14 +215,15 @@ $(document).ready(function () {
         // console.log("tension"+tension);
         // console.log("sucre"+sucre);
         // console.log("indice"+indice);
+        var medecinsPraticienUrl = window.location.origin + "/medecins_praticien";
         total = atteint + age + taille + activite + fruit + tension + sucre + indice;
         let resultat = "";
         if (total < 7) {
             resultat = "<span class='Green'>Faible</span><p class='p-result'>Bonne nouvelle, vous avez peu de risque de développer un diabète dans les 10 ans. Continuez de mener une vie saine en mangeant équilibré et en faisant suffisamment d’exercices.</p>";
         } else if (total >= 7 && total <= 12) {
-            resultat = "<span class='Yellow'>Modéré</span><p class='p-result'>Votre risque de développer un diabète dans les 10 ans est légèrement élevé. En suivant une alimentation saine et équilibrée et en faisant suffisamment d’exercices vous pouvez réduire considérablement votre risque. Je retrouve des conseils sur un mode de vie sain <a href='https://ohmedias.com/Clients/care-test/fr/conseils/' target='_blank'>ici</a>.</p>";
+            resultat = "<span class='Yellow'>Modéré</span><p class='p-result'>Votre risque de développer un diabète dans les 10 ans est légèrement élevé. En suivant une alimentation saine et équilibrée et en faisant suffisamment d’exercices vous pouvez réduire considérablement votre risque. Je retrouve des conseils sur un mode de vie sain <a href='" + medecinsPraticienUrl + "' target='_blank'>ici</a>.</p>";
         } else {
-            resultat = "<span class='Red'>Élevé</span><p class='p-result'>Vous êtes exposé à un risque élevé de développer un diabète dans les 10 ans. Consultez rapidement votre médecin généraliste pour un effectuer un bilan approfondi. Je consulte un <a href='https://ohmedias.com/Clients/care-test/fr/mdecins-praticiens' target='_blank'>médecin généraliste</a>.</p>";
+            resultat = "<span class='Red'>Élevé</span><p class='p-result'>Vous êtes exposé à un risque élevé de développer un diabète dans les 10 ans. Consultez rapidement votre médecin généraliste pour effectuer un bilan approfondi. Je consulte un <a href='" + medecinsPraticienUrl + "' target='_blank'>médecin généraliste</a>.</p>";
         }
         $(".resultat").empty();
         $(".resultat").append(resultat);
@@ -258,41 +261,41 @@ $(document).ready(function () {
         let sexe = "";
         let fumeur = "";
         let age2 = "";
-    
+
         // Capture les valeurs des inputs
         $('input[name="sexe"]').change(function () {
             sexe = $('input[name="sexe"]:checked').val();
         });
-    
+
         $('input[name="fumeur"]').change(function () {
             fumeur = $('input[name="fumeur"]:checked').val();
         });
-    
+
         $('input[name="age2"]').change(function () {
             age2 = $('input[name="age2"]:checked').val();
-    
+
             // Assurez-vous que toutes les valeurs sont définies
             if (sexe && fumeur && age2) {
                 // Créez dynamiquement le chemin de l'image en utilisant window.location.origin
                 let baseUrl = window.location.origin + "/media/risque_cardio";  // Base URL
-    
+
                 // Assemblez le chemin complet
                 let imagePath = `${baseUrl}/${sexe}/${fumeur}/${age2}.svg`;
-    
+
                 // Supprimez les anciennes images si nécessaire
                 $(".votreRisqueVasculaire .cardio-img").remove();
-    
+
                 // Ajoutez la nouvelle image
                 let image = `<img class="cardio-img" src="${imagePath}" alt="Risque cardiovasculaire">`;
                 $(".votreRisqueVasculaire").append(image);
-    
+
                 console.log("Chemin généré :", imagePath);
             } else {
                 console.log("Toutes les options ne sont pas encore sélectionnées.");
             }
         });
     });
-    
+
     // Cardio help popup
     $(".popup-click").click(function () {
         $('.popup-wrapper').removeClass('d-none')

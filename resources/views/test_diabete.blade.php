@@ -1,6 +1,6 @@
 @extends('layouts.app_footerless')
 
-@section('title', 'risque-maladies-cardiovasculaires')
+@section('title', 'test-diabete')
 
 @section('content')
 <div class="abs left"></div>

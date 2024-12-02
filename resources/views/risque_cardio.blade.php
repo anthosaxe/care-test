@@ -104,7 +104,7 @@
                     <ul>
                         <li>A la pharmacie : Votre pharmacien peut prendre votre tension artérielle lorsque vous le désirez. Un autotest pour le cholestérol existe et votre pharmacien peut vous conseiller et vous aider dans son interprétation. Je visite <a href="https://www.pharmacie.be/fr/Pages/default.aspx" target="_blank">mon pharmacien le plus proche</a>.
                         </li>
-                        <li>En consultation médicale : Lors de votre prochaine visite, n’hésitez pas à demander à votre médecin de prendre votre tension et de demander votre taux de cholestérol. Je souhaite <a href="#" target="_blank">consulter un médecin généraliste</a>.</li>
+                        <li>En consultation médicale : Lors de votre prochaine visite, n’hésitez pas à demander à votre médecin de prendre votre tension et de demander votre taux de cholestérol. Je souhaite <a href="{{ route('medecins_praticien') }}" target="_blank">consulter un médecin généraliste</a>.</li>
                     </ul>
                 </div>
             </div>
