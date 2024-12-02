@@ -7,7 +7,7 @@
 <div class="abs right"></div>
 <div class="abs countPage d-none"></div>
 
-<form action="?" class="myform rel">
+<form action="?" class="myform rel" style="padding-top: 70px;">
 
     <div class="question toNext rel bg_cover" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}'); filter: opacity(0.5);">
 

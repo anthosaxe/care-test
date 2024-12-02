@@ -135,12 +135,6 @@ p {
     font-weight: 500;
 }
 
-/* .container-type img {
-    width: 600px;
-    height: auto;
-    object-fit: contain;
-} */
-
 .container-type img.consulte-picto {
     width: 300px;
     height: auto;
@@ -238,16 +232,6 @@ p {
 .votreRisqueVasculaire img {
     width: 280px;
 }
-
-/* .axe-left {
-    left: -112%;
-    bottom: 55%;
-}
-
-.axe-right {
-    right: -165%;
-    bottom: 0;
-} */
 
 @keyframes animButton {
     0% {

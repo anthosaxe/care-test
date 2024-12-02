@@ -101,7 +101,7 @@
         </div>
         <div class="row">
             <div data-aos="fade-left" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
-                <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
+                <a class="link-conseil" href="{{ asset('media/livret-patient-fr-vf.pdf') }}" target="_blank">
                     <div class="rel conseilImg" style="background-image: url('{{ asset('media/Acceuil/800x969-11.png') }}')">
                         <div class="filtre filtre1 abs"></div>
                         <h4 class="abs textFiltre">Manger <span>mieux</span></h4>
@@ -113,7 +113,7 @@
                 <p></p>
             </div>
             <div data-aos="fade-left" data-aos-delay="500" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
-                <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
+                <a class="link-conseil" href="{{ asset('media/livret-patient-fr-vf.pdf') }}" target="_blank">
                     <div class="rel conseilImg" style="background-image: url('{{ asset('media/Acceuil/800x969-12.png') }}')">
                         <div class="filtre filtre2 abs"></div>
                         <h4 class="abs textFiltre">Bouger <span>plus</span></h4>
@@ -125,7 +125,7 @@
                 <p></p>
             </div>
             <div data-aos="fade-right" data-aos-delay="500" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
-                <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
+                <a class="link-conseil" href="{{ asset('media/livret-patient-fr-vf.pdf') }}" target="_blank">
                     <div class="rel conseilImg" style="background-image: url('{{ asset('media/Acceuil/800x969-13.png') }}')">
                         <div class="filtre filtre3 abs"></div>
                         <h4 class="abs textFiltre">Vivre <br><span>mieux</span></h4>
@@ -137,7 +137,7 @@
                 <p></p>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-6 col-12 conseilImgContainer aos-init">
-                <a class="link-conseil" href="https://caretest.be/care-test/CMS/content/images/202108/livret-patient-fr-vf.pdf" target="_blank">
+                <a class="link-conseil" href="{{ asset('media/livret-patient-fr-vf.pdf') }}" target="_blank">
                     <div class="rel conseilImg" style="background-image: url('{{ asset('media/Acceuil/800x969-14.png') }}')">
                         <div class="filtre filtre4 abs"></div>
                         <h4 class="abs textFiltre">Mon programme<span>en 28J</span></h4>
