@@ -3,7 +3,7 @@
 @section('title', 'a-propos')
 
 @section('content')
-<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/a propos/1920x935-8.png') }}')">
+<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}')">
     <div class="filtre abs"></div>
     <h1 class="abs">A propos</h1>
 
@@ -24,7 +24,7 @@
             ses risques de développer un diabète ou une maladie
             cardiovasculaire.&nbsp;</span></p>
     <div class="iframe-container">
-        <video src="{{ asset('media/a propos/MD Care Test.mp4') }}" controls loop>
+        <video src="{{ asset('media/A propos/MD Care Test.mp4') }}" controls loop>
             Votre navigateur ne supporte pas les vidéos HTML5.
         </video>
     </div>

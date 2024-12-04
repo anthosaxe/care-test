@@ -3,7 +3,7 @@
 @section('title', 'conseils')
 
 @section('content')
-<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/a propos/1920x935-8.png') }}');">
+<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}');">
     <div class="filtre abs"></div>
     <h1 class="abs">Conseils</h1>
 </section>
@@ -14,7 +14,7 @@
     <div class="row mainRow bootstrapElement">
         <div class="col bootstrapElement col-xs-12 col-md-4">
             <p>
-                <img alt="" src="{{ asset('media/conseils/livre.png') }}" width="50" height="71" />
+                <img alt="" src="{{ asset('media/Conseils/livre.png') }}" width="50" height="71" />
             </p>
         </div>
         <div class="col bootstrapElement col-xs-12 col-md-8">
@@ -28,9 +28,9 @@
         </div>
     </div>
     <div class="row mainRow bootstrapElement" style="text-align: center;">
-        <img alt="" src="{{ asset('media/conseils/1920x1229-pyramide-alimentaire.jpg') }}" />
+        <img alt="" src="{{ asset('media/Conseils/1920x1229-pyramide-alimentaire.jpg') }}" />
         <br />
-        <img alt="" src="{{ asset('media/conseils/1920x1027-alimentation-quilibre.jpg') }}" />
+        <img alt="" src="{{ asset('media/Conseils/1920x1027-alimentation-quilibre.jpg') }}" />
     </div>
     <h3 id="glycemie">
         <span style="color: #008080;">Je fais attention à l’indice glycémique de mes aliments</span>
@@ -50,7 +50,7 @@
     </p>
     <p>
         <strong>
-            <img alt="" src="{{ asset('media/conseils/1920x1060-conseils3.jpg') }}" style="width: 850px; display: block; margin-left: auto; margin-right: auto;" />
+            <img alt="" src="{{ asset('media/Conseils/1920x1060-conseils3.jpg') }}" style="width: 850px; display: block; margin-left: auto; margin-right: auto;" />
             <br />
         </strong>
     </p>
@@ -68,13 +68,13 @@
         </span>
     </p>
     <p>
-        <img alt="" src="{{ asset('media/conseils/1920x651-conseils7.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
+        <img alt="" src="{{ asset('media/Conseils/1920x651-conseils7.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
     </p>
     <h3 id="sedentarite">
         <span style="color: #008080;">Je limite la sédentarité</span>
     </h3>
     <p>
-        <img alt="" src="{{ asset('media/conseils/1920x988-conseils4.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
+        <img alt="" src="{{ asset('media/Conseils/1920x988-conseils4.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
     </p>
     <p>
         <span style="color: #003366;">
@@ -94,7 +94,7 @@
         </span>
     </p>
     <p>
-        <img alt="" src="{{ asset('media/conseils/1920x1240-dpenses-nergtiques.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
+        <img alt="" src="{{ asset('media/Conseils/1920x1240-dpenses-nergtiques.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
     </p>
     <h3 id="hypertension">
         <span style="color: #008080;">Je réduis mon hypertension</span>
@@ -170,7 +170,7 @@
         </li>
     </ul>
     <p style="text-align: center;">
-        <img alt="" src="{{ asset('media/conseils/1920x1343-conseils6.jpg') }}" />
+        <img alt="" src="{{ asset('media/Conseils/1920x1343-conseils6.jpg') }}" />
     </p>
     <h3>
         <span style="color: #008080;">En savoir plus</span>

@@ -3,7 +3,7 @@
 @section('title', 'risques')
 
 @section('content')
-<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/a propos/1920x935-8.png') }}')">
+<section class="banner-type bg_cover rel" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}')">
     <div class="filtre abs"></div>
     <h1 class="abs">Risques</h1>
 </section>
@@ -43,9 +43,9 @@
     </p>
     <div class="row mainRow bootstrapElement">
         <div class="bootstrapElement col-12 col-md-6">
-            <img style="height: 450px; display: block; margin-left: auto; margin-right: auto;" alt="" src="{{ asset('media/risques/1920x3013-glycmie-cropped-cropped.jpg') }}" />
+            <img style="height: 450px; display: block; margin-left: auto; margin-right: auto;" alt="" src="{{ asset('media/Risques/1920x3013-glycmie-cropped-cropped.jpg') }}" />
         </div>
-        <img style="height: 450px; display: block; margin-left: auto; margin-right: auto;" alt="" src="{{ asset('media/risques/1920x1588-glycmie-cropped.jpg') }}" />
+        <img style="height: 450px; display: block; margin-left: auto; margin-right: auto;" alt="" src="{{ asset('media/Risques/1920x1588-glycmie-cropped.jpg') }}" />
     </div>
     <h3 style="font-size: 1.3em;">
         <span style="color: #008080;">Les complications du diabète</span>
@@ -107,7 +107,7 @@
         </li>
     </ul>
     <p>
-        <img alt="" src="{{ asset('media/risques/1920x1704-complications-diabte.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
+        <img alt="" src="{{ asset('media/Risques/1920x1704-complications-diabte.jpg') }}" style="display: block; margin-left: auto; margin-right: auto;" />
     </p>
     <p></p>
     <h3 id="hypertension">

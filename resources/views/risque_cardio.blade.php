@@ -10,7 +10,7 @@
 
     <form action="?" class="myform2 rel">
 
-        <div class="question toNext rel bg_cover" style="background-image: url('{{ asset('media/a propos/1920x935-8.png') }}'); filter: opacity(0.5);">
+        <div class="question toNext rel bg_cover" style="background-image: url('{{ asset('media/A propos/1920x935-8.png') }}'); filter: opacity(0.5);">
 
             <h1 class="mb-4">Évaluez votre <span>risque</span> de contracter des <span>maladies cardiovasculaires</span></h1>
             <p class="text_form"></p>
